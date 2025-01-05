@@ -1,0 +1,10 @@
+Вывести список режиссеров /api/v1/directors/
+Вывести одного режиссера   /api/v1/directors/<int:id>/
+ 
+
+Вывести список фильмов      /api/v1/movies/
+Вывести один фильм             /api/v1/movies/<int:id>/
+ 
+
+Вывести список отзывов       /api/v1/reviews/
+Вывести один отзыв              /api/v1/reviews/<int:id>/
