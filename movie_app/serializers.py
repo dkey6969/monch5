@@ -28,4 +28,5 @@ class DirectorSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Director
-        fields = ['id', 'name', 'movies_count']
+        fields = '__all__'
+

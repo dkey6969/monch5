@@ -1,4 +1,4 @@
-from rest_framework import generics
+from rest_framework import generics,viewsets
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.db.models import Count
@@ -29,3 +29,10 @@ class MovieListCreateAPIView(generics.ListCreateAPIView):
 class ReviewListCreateAPIView(generics.ListCreateAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
+
+
+class DirectorViewSet(viewsets.ModelViewSet):
+    queryset = Director.objects.all()
+    serializer_class = DirectorSerializer
+
+
